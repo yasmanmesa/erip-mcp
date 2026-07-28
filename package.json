@@ -1,0 +1,54 @@
+{
+  "name": "erip-mcp",
+  "version": "0.1.2",
+  "description": "MCP server for Belarus ERIP/E-POS/KROK payments via aggregator APIs",
+  "type": "module",
+  "bin": {
+    "erip-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "erip",
+    "belarus",
+    "bepaid",
+    "payments",
+    "e-pos"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasmanmesa/erip-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yasmanmesa/erip-mcp/issues"
+  },
+  "homepage": "https://github.com/yasmanmesa/erip-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0"
+  }
+}

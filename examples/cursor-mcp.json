@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "erip": {
+      "command": "npx",
+      "args": ["-y", "erip-mcp"],
+      "env": {
+        "BEPAID_SHOP_ID": "YOUR_SHOP_ID",
+        "BEPAID_SECRET_KEY": "YOUR_SECRET_KEY",
+        "EXPRESS_PAY_TOKEN": "a75b74cbcfe446509e8ee874f421bd66",
+        "EXPRESS_PAY_SECRET_WORD": "sandbox.expresspay.by",
+        "ERIP_MCP_ENV": "sandbox",
+        "ERIP_MCP_ALLOW_WRITE": "0"
+      }
+    }
+  }
+}
